@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <title>Wawin — Desarrollador de Software</title>
-    <meta name="description" content="Portafolio de Erick Jiménez (Wawin) — desarrollador de software especializado en React Native, TypeScript, Salesforce y aplicaciones web." />
-    <meta name="keywords" content="desarrollador software, React Native, TypeScript, Salesforce, Apex, JavaScript, portafolio" />
-    <meta name="author" content="Erick Jiménez" />
-    <meta property="og:title" content="Wawin — Desarrollador de Software" />
-    <meta property="og:description" content="Desarrollador de software — apps móviles, web y plataformas enterprise." />
+    <link rel="apple-touch-icon" href="img/logo-k.png" />
+    <meta name="theme-color" content="#000000" />
+    <title>Erick Jiménez (Wawin) — Desarrollador Full Stack &amp; Tech Lead</title>
+    <meta name="description" content="Portafolio de Erick Jiménez (Wawin) — desarrollador full stack y jefe de desarrollo. React, TypeScript, Node.js, PostgreSQL y Salesforce. SaaS en producción con pagos, suscripciones e infraestructura propia." />
+    <meta name="keywords" content="desarrollador full stack, tech lead, React, TypeScript, Node.js, PostgreSQL, Stripe, React Native, Salesforce, Apex, portafolio, Veracruz" />
+    <meta name="author" content="Erick Jiménez Domínguez" />
+    <link rel="canonical" href="https://portafolio-wawin.vercel.app/" />
+    <meta property="og:title" content="Erick Jiménez (Wawin) — Desarrollador Full Stack &amp; Tech Lead" />
+    <meta property="og:description" content="Jefe de desarrollo de Petworld. Construyo SaaS en producción de punta a punta: frontend, backend, base de datos e infraestructura." />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta property="og:url" content="https://portafolio-wawin.vercel.app/" />
+    <meta property="og:image" content="https://portafolio-wawin.vercel.app/img/logo-k.png" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Erick Jiménez (Wawin) — Full Stack Developer &amp; Tech Lead" />
+    <meta name="twitter:description" content="Head of development at Petworld. Production SaaS, end to end." />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -27,34 +35,42 @@
         <div class="navbar-content">
             <span class="logo">Wawin<span class="accent-dot">.</span></span>
             <ul class="nav-links">
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#stack">Stack</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                <li><a href="#stack" data-es="Stack" data-en="Stack">Stack</a></li>
+                <li><a href="#experiencia" data-es="Experiencia" data-en="Experience">Experiencia</a></li>
+                <li><a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
             </ul>
-            <button class="nav-menu-btn" id="navMenuBtn" aria-label="Abrir menú">&#9776;</button>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language / Cambiar idioma">
+                    <span class="lang-opt" data-lang="es">ES</span><span class="lang-sep">/</span><span class="lang-opt" data-lang="en">EN</span>
+                </button>
+                <button class="nav-menu-btn" id="navMenuBtn" aria-label="Abrir menú">&#9776;</button>
+            </div>
         </div>
         <ul class="nav-links-mobile" id="navMobile">
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#stack">Stack</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+            <li><a href="#stack" data-es="Stack" data-en="Stack">Stack</a></li>
+            <li><a href="#experiencia" data-es="Experiencia" data-en="Experience">Experiencia</a></li>
+            <li><a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
         </ul>
     </nav>
 
     <!-- ─── HERO ─── -->
     <section class="hero">
         <div class="hero-content">
-            <p class="hero-greeting">Hola, soy</p>
+            <p class="hero-greeting" data-es="Hola, soy" data-en="Hi, I'm">Hola, soy</p>
             <h1>Wawin</h1>
-            <p class="subtitle">Desarrollador de Software</p>
-            <p class="hero-desc">
-                Construyo aplicaciones web y móviles que combinan diseño cuidadoso con código limpio.
-                Me enfoco en la experiencia del usuario y en soluciones que escalan.
+            <p class="subtitle"
+               data-es="Desarrollador Full Stack · Tech Lead"
+               data-en="Full Stack Developer · Tech Lead">Desarrollador Full Stack · Tech Lead</p>
+            <p class="hero-desc"
+               data-es="Jefe de desarrollo de Petworld. Construyo productos completos —frontend, backend, base de datos e infraestructura— y los llevo hasta producción con usuarios y pagos reales."
+               data-en="Head of development at Petworld. I build complete products —frontend, backend, database and infrastructure— and ship them to production with real users and real payments.">
+                Jefe de desarrollo de Petworld. Construyo productos completos —frontend, backend, base de datos e infraestructura— y los llevo hasta producción con usuarios y pagos reales.
             </p>
             <div class="hero-buttons">
-                <a href="#proyectos" class="cta-button">Ver proyectos</a>
-                <a href="#contacto" class="cta-button outline">Contacto</a>
+                <a href="#proyectos" class="cta-button" data-es="Ver proyectos" data-en="View projects">Ver proyectos</a>
+                <a href="#contacto" class="cta-button outline" data-es="Contacto" data-en="Contact">Contacto</a>
             </div>
         </div>
         <div class="hero-scroll-hint">
@@ -65,42 +81,69 @@
 
     <!-- ─── PROYECTOS DESTACADOS ─── -->
     <section id="proyectos" class="section">
-        <h2 class="section-title">Proyectos</h2>
-        <p class="section-subtitle">
-            Una selección de trabajos recientes. Haz clic en cualquier tarjeta para ver más detalles.
+        <h2 class="section-title" data-es="Proyectos" data-en="Projects">Proyectos</h2>
+        <p class="section-subtitle"
+           data-es="Trabajo reciente en producción. Haz clic en cualquier tarjeta para ver más detalles."
+           data-en="Recent production work. Click any card for more details.">
+            Trabajo reciente en producción. Haz clic en cualquier tarjeta para ver más detalles.
         </p>
 
         <!-- Tarjetas fijas (2 columnas) -->
         <div class="featured-projects">
             <div class="project-card featured"
-                 data-title="Animalotchi"
-                 data-desc="Juego de mascota virtual con mecánicas de cuidado, estadísticas en tiempo real y sistema de eventos aleatorios. Desarrollado con JavaScript vanilla y Canvas API."
-                 data-tech="JavaScript, Canvas API, CSS3, HTML5"
+                 data-title="Petworld"
+                 data-desc-es="Plataforma SaaS para el ecosistema de mascotas: adopción, cartilla de salud digital, refugios y negocios. Soy el jefe de desarrollo y responsable del stack completo —frontend, backend, base de datos e infraestructura—. Diseñé el sistema de suscripciones y entitlements con Stripe, el motor de límites por plan, el programa de adopción selectiva, la migración de almacenamiento a Backblaze B2 y el panel de administración. Más de 40 pull requests, migraciones SQL versionadas y refactor del frontend a TypeScript estricto."
+                 data-desc-en="SaaS platform for the pet ecosystem: adoption, digital health records, shelters and businesses. I'm the head of development and own the full stack —frontend, backend, database and infrastructure—. I designed the Stripe subscriptions and entitlements system, the per-plan quota engine, the selective adoption program, the storage migration to Backblaze B2 and the admin panel. 40+ pull requests, versioned SQL migrations and a full frontend refactor to strict TypeScript."
+                 data-tech="React, TypeScript, Node.js, Express, PostgreSQL, Sequelize, Stripe, Railway, Vercel"
                  data-status="LIVE"
-                 data-img="img/animalotchi.png"
+                 data-img="img/ph-petworld.svg"
                  data-link="#">
                 <span class="project-status-badge">LIVE</span>
                 <div class="project-image">
-                    <img src="img/animalotchi.png" alt="Animalotchi" loading="lazy" />
-                    <div class="project-overlay"><span>Ver detalles</span></div>
+                    <img src="img/ph-petworld.svg" class="ph" alt="Petworld" loading="lazy" />
+                    <div class="project-overlay"><span data-es="Ver detalles" data-en="View details">Ver detalles</span></div>
                 </div>
                 <div class="project-content">
-                    <h3>Animalotchi</h3>
-                    <p>Mascota virtual interactiva con sistema de cuidado, estadísticas y eventos aleatorios. Lógica de juego construida con JS puro.</p>
+                    <h3>Petworld</h3>
+                    <p data-es="SaaS del ecosistema de mascotas. Jefe de desarrollo del stack completo: suscripciones con Stripe, límites por plan, migraciones y panel de administración."
+                       data-en="Pet ecosystem SaaS. Head of development across the full stack: Stripe subscriptions, per-plan quotas, migrations and admin panel.">
+                        SaaS del ecosistema de mascotas. Jefe de desarrollo del stack completo: suscripciones con Stripe, límites por plan, migraciones y panel de administración.
+                    </p>
                     <div class="tech-tags">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Canvas API</span>
-                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Stripe</span>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card featured view-more"
-                 data-link="https://github.com/Darw1ng">
-                <div class="view-more-content">
-                    <div class="view-more-plus">+</div>
-                    <h3>Más proyectos</h3>
-                    <p>Visita mi GitHub para ver el resto del trabajo</p>
+            <div class="project-card featured"
+                 data-title="Pulso"
+                 data-desc-es="SaaS médico para consultorios: expediente clínico, recetas, agenda, cobros e inventario. Lidero el frontend dentro de un monorepo Django + React, trabajando contra un contrato de API compartido con el equipo de backend. Implementé el registro público de médicos, la captura de datos de consultorio requeridos para emitir recetas, un ErrorBoundary global y una auditoría previa a producción que dejó el módulo de facturación consistente con lo que el producto realmente cobra."
+                 data-desc-en="Medical SaaS for clinics: patient records, prescriptions, scheduling, billing and inventory. I lead the frontend inside a Django + React monorepo, working against an API contract shared with the backend team. I built the public doctor sign-up, the clinic data capture required to issue prescriptions, a global ErrorBoundary, and a pre-production audit that made the billing module consistent with what the product actually charges."
+                 data-tech="React, TypeScript, Vite, Django, PostgreSQL, Railway"
+                 data-status="WIP"
+                 data-img="img/ph-pulso.svg"
+                 data-link="#">
+                <span class="project-status-badge">WIP</span>
+                <div class="project-image">
+                    <img src="img/ph-pulso.svg" class="ph" alt="Pulso" loading="lazy" />
+                    <div class="project-overlay"><span data-es="Ver detalles" data-en="View details">Ver detalles</span></div>
+                </div>
+                <div class="project-content">
+                    <h3>Pulso</h3>
+                    <p data-es="SaaS médico para consultorios. Lidero el frontend en un monorepo Django + React: expediente, recetas, agenda y cobros."
+                       data-en="Medical SaaS for clinics. I lead the frontend in a Django + React monorepo: records, prescriptions, scheduling and billing.">
+                        SaaS médico para consultorios. Lidero el frontend en un monorepo Django + React: expediente, recetas, agenda y cobros.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,43 +153,51 @@
             <div class="projects-carousel" id="carousel">
 
                 <div class="project-card"
-                     data-title="Looking4More"
-                     data-desc="Aplicación móvil desarrollada con TypeScript y React Native. Plataforma de exploración y descubrimiento de contenido con arquitectura moderna y autenticación propia."
-                     data-tech="TypeScript, React Native, JavaScript, Expo"
+                     data-title="just2know"
+                     data-desc-es="Calendario familiar compartido, de idea a producto en producción. Construido de punta a punta: autenticación propia, sincronización en tiempo real con Supabase, invitaciones a grupos y un flujo completo de suscripción con Stripe —checkout, webhooks y portal de cliente— verificado extremo a extremo."
+                     data-desc-en="Shared family calendar, taken from idea to a live product. Built end to end: custom authentication, real-time sync with Supabase, group invitations, and a complete Stripe subscription flow —checkout, webhooks and customer portal— verified end to end."
+                     data-tech="React, Vite, TypeScript, Supabase, PostgreSQL, Stripe, Vercel"
                      data-status="LIVE"
-                     data-img="img/screenshot-l4m.png"
-                     data-link="#">
+                     data-img="img/ph-just2know.svg"
+                     data-link="https://just2know.vercel.app">
                     <span class="project-status-badge">LIVE</span>
                     <div class="project-image">
-                        <img src="img/screenshot-l4m.png" alt="Looking4More" loading="lazy" />
-                        <div class="project-overlay"><span>Ver detalles</span></div>
+                        <img src="img/ph-just2know.svg" class="ph" alt="just2know" loading="lazy" />
+                        <div class="project-overlay"><span data-es="Ver detalles" data-en="View details">Ver detalles</span></div>
                     </div>
                     <div class="project-content">
-                        <h3>Looking4More</h3>
-                        <p>App móvil de exploración y descubrimiento de contenido. Autenticación, perfil de usuario y feed dinámico.</p>
+                        <h3>just2know</h3>
+                        <p data-es="Producto propio: calendario familiar compartido con auth, tiempo real y suscripciones con Stripe."
+                           data-en="My own product: shared family calendar with auth, real-time sync and Stripe subscriptions.">
+                            Producto propio: calendario familiar compartido con auth, tiempo real y suscripciones con Stripe.
+                        </p>
                         <div class="tech-tags">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">Expo</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">Stripe</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card"
                      data-title="WakOs Salesforce"
-                     data-desc="Plataforma ERP e-learning nativa en Salesforce con frontend en React. Gestión de cursos, usuarios y contenido educativo integrada directamente en el ecosistema Salesforce usando Apex y TypeScript."
-                     data-tech="Salesforce, Apex, TypeScript, React, JavaScript"
+                     data-desc-es="Plataforma ERP de e-learning nativa en Salesforce: gestión de cursos, pagos con Stripe y seguimiento de progreso. Backend en Apex con Flows declarativos, frontend en React con TypeScript, arquitectura basada en Custom Metadata y API REST."
+                     data-desc-en="Salesforce-native e-learning ERP platform: course management, Stripe payments and progress tracking. Apex backend with declarative Flows, React + TypeScript frontend, Custom Metadata architecture and REST API."
+                     data-tech="Salesforce, Apex, LWC, TypeScript, React, Stripe"
                      data-status="LIVE"
                      data-img="img/screenshot-wakos.jpg"
                      data-link="https://github.com/Darw1ng/WakOs-Salesforce">
                     <span class="project-status-badge">LIVE</span>
                     <div class="project-image">
                         <img src="img/screenshot-wakos.jpg" alt="WakOs Salesforce" loading="lazy" />
-                        <div class="project-overlay"><span>Ver detalles</span></div>
+                        <div class="project-overlay"><span data-es="Ver detalles" data-en="View details">Ver detalles</span></div>
                     </div>
                     <div class="project-content">
                         <h3>WakOs Salesforce</h3>
-                        <p>Plataforma ERP e-learning nativa en Salesforce. Gestión de cursos y usuarios con Apex en el backend y React en el frontend.</p>
+                        <p data-es="ERP de e-learning nativo en Salesforce. Apex y Flows en el backend, React + TypeScript en el frontend."
+                           data-en="Salesforce-native e-learning ERP. Apex and Flows on the backend, React + TypeScript on the frontend.">
+                            ERP de e-learning nativo en Salesforce. Apex y Flows en el backend, React + TypeScript en el frontend.
+                        </p>
                         <div class="tech-tags">
                             <span class="tech-tag">Salesforce</span>
                             <span class="tech-tag">Apex</span>
@@ -157,20 +208,78 @@
                 </div>
 
                 <div class="project-card"
+                     data-title="Quijote"
+                     data-desc-es="Sistema de inventario para librerías, levantado desde un export de diseño hasta un monorepo funcional. Arquitectura con pnpm y Turborepo, seis rutas construidas con Vite, React 19 y TypeScript, y un sistema de estilos completamente encapsulado para evitar colisiones de CSS."
+                     data-desc-en="Bookstore inventory system, taken from a design export to a working monorepo. pnpm + Turborepo architecture, six routes built with Vite, React 19 and TypeScript, and a fully scoped styling system to avoid CSS collisions."
+                     data-tech="React 19, TypeScript, Vite, Turborepo, pnpm"
+                     data-status="WIP"
+                     data-img="img/ph-quijote.svg"
+                     data-link="#">
+                    <span class="project-status-badge">WIP</span>
+                    <div class="project-image">
+                        <img src="img/ph-quijote.svg" class="ph" alt="Quijote" loading="lazy" />
+                        <div class="project-overlay"><span data-es="Ver detalles" data-en="View details">Ver detalles</span></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Quijote</h3>
+                        <p data-es="Inventario para librerías. Monorepo con pnpm y Turborepo, React 19 + TypeScript y estilos encapsulados."
+                           data-en="Bookstore inventory. pnpm + Turborepo monorepo, React 19 + TypeScript and fully scoped styles.">
+                            Inventario para librerías. Monorepo con pnpm y Turborepo, React 19 + TypeScript y estilos encapsulados.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React 19</span>
+                            <span class="tech-tag">Turborepo</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card"
+                     data-title="Looking4More"
+                     data-desc-es="Aplicación móvil desarrollada con React Native y TypeScript. Plataforma de exploración y descubrimiento de contenido con autenticación propia, perfiles de usuario y feed dinámico."
+                     data-desc-en="Mobile app built with React Native and TypeScript. Content exploration and discovery platform with custom authentication, user profiles and a dynamic feed."
+                     data-tech="TypeScript, React Native, Expo"
+                     data-status="LIVE"
+                     data-img="img/screenshot-l4m.png"
+                     data-link="#">
+                    <span class="project-status-badge">LIVE</span>
+                    <div class="project-image">
+                        <img src="img/screenshot-l4m.png" alt="Looking4More" loading="lazy" />
+                        <div class="project-overlay"><span data-es="Ver detalles" data-en="View details">Ver detalles</span></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Looking4More</h3>
+                        <p data-es="App móvil de exploración y descubrimiento de contenido. Autenticación, perfil de usuario y feed dinámico."
+                           data-en="Mobile app for content exploration and discovery. Authentication, user profiles and dynamic feed.">
+                            App móvil de exploración y descubrimiento de contenido. Autenticación, perfil de usuario y feed dinámico.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Expo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card"
                      data-title="AtomOss"
-                     data-desc="Aplicación móvil construida con React Native y Expo. Red social o plataforma de comunidad con sistema de noticias, perfiles y contenido multimedia."
-                     data-tech="React Native, Expo, TypeScript, JavaScript"
+                     data-desc-es="Aplicación móvil construida con React Native y Expo. Plataforma de comunidad con sistema de noticias, perfiles de usuario y contenido multimedia, publicada en producción."
+                     data-desc-en="Mobile app built with React Native and Expo. Community platform with a news system, user profiles and multimedia content, shipped to production."
+                     data-tech="React Native, Expo, TypeScript"
                      data-status="LIVE"
                      data-img="img/screenshot-atomoss.png"
                      data-link="#">
                     <span class="project-status-badge">LIVE</span>
                     <div class="project-image">
                         <img src="img/screenshot-atomoss.png" alt="AtomOss" loading="lazy" />
-                        <div class="project-overlay"><span>Ver detalles</span></div>
+                        <div class="project-overlay"><span data-es="Ver detalles" data-en="View details">Ver detalles</span></div>
                     </div>
                     <div class="project-content">
                         <h3>AtomOss</h3>
-                        <p>App móvil con sistema de noticias, perfiles de usuario y contenido multimedia. Publicada en producción (.aab).</p>
+                        <p data-es="App móvil con sistema de noticias, perfiles de usuario y contenido multimedia. Publicada en producción."
+                           data-en="Mobile app with news system, user profiles and multimedia content. Shipped to production.">
+                            App móvil con sistema de noticias, perfiles de usuario y contenido multimedia. Publicada en producción.
+                        </p>
                         <div class="tech-tags">
                             <span class="tech-tag">React Native</span>
                             <span class="tech-tag">Expo</span>
@@ -181,7 +290,8 @@
 
                 <div class="project-card"
                      data-title="¿Qué está abierto?"
-                     data-desc="Aplicación móvil que muestra en tiempo real qué negocios y lugares están abiertos a la hora actual. Backend con PostgreSQL y lógica de horarios dinámica."
+                     data-desc-es="Aplicación móvil que muestra en tiempo real qué negocios y lugares están abiertos a la hora actual. Backend con PostgreSQL y lógica de horarios dinámica."
+                     data-desc-en="Mobile app that shows in real time which businesses and places are open right now. PostgreSQL backend with dynamic opening-hours logic."
                      data-tech="TypeScript, React Native, Expo, PostgreSQL"
                      data-status="WIP"
                      data-img="img/screenshot-queabierto.png"
@@ -189,11 +299,14 @@
                     <span class="project-status-badge">WIP</span>
                     <div class="project-image">
                         <img src="img/screenshot-queabierto.png" alt="¿Qué está abierto?" loading="lazy" />
-                        <div class="project-overlay"><span>Ver detalles</span></div>
+                        <div class="project-overlay"><span data-es="Ver detalles" data-en="View details">Ver detalles</span></div>
                     </div>
                     <div class="project-content">
-                        <h3>¿Qué está abierto?</h3>
-                        <p>App móvil que detecta en tiempo real qué negocios están abiertos ahora. Horarios dinámicos con PostgreSQL.</p>
+                        <h3 data-es="¿Qué está abierto?" data-en="What's Open?">¿Qué está abierto?</h3>
+                        <p data-es="App móvil que detecta en tiempo real qué negocios están abiertos ahora. Horarios dinámicos con PostgreSQL."
+                           data-en="Mobile app that detects in real time which businesses are open now. Dynamic opening hours with PostgreSQL.">
+                            App móvil que detecta en tiempo real qué negocios están abiertos ahora. Horarios dinámicos con PostgreSQL.
+                        </p>
                         <div class="tech-tags">
                             <span class="tech-tag">TypeScript</span>
                             <span class="tech-tag">React Native</span>
@@ -203,8 +316,36 @@
                 </div>
 
                 <div class="project-card"
+                     data-title="Animalotchi"
+                     data-desc-es="Juego de mascota virtual con mecánicas de cuidado, estadísticas en tiempo real y sistema de eventos aleatorios. Desarrollado con JavaScript vanilla y Canvas API."
+                     data-desc-en="Virtual pet game with care mechanics, real-time stats and a random event system. Built with vanilla JavaScript and the Canvas API."
+                     data-tech="JavaScript, Canvas API, CSS3, HTML5"
+                     data-status="LIVE"
+                     data-img="img/animalotchi.png"
+                     data-link="#">
+                    <span class="project-status-badge">LIVE</span>
+                    <div class="project-image">
+                        <img src="img/animalotchi.png" alt="Animalotchi" loading="lazy" />
+                        <div class="project-overlay"><span data-es="Ver detalles" data-en="View details">Ver detalles</span></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Animalotchi</h3>
+                        <p data-es="Mascota virtual interactiva con sistema de cuidado, estadísticas y eventos aleatorios. Lógica de juego en JS puro."
+                           data-en="Interactive virtual pet with care system, stats and random events. Game logic in plain JS.">
+                            Mascota virtual interactiva con sistema de cuidado, estadísticas y eventos aleatorios. Lógica de juego en JS puro.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Canvas API</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card"
                      data-title="Génesis Calasanz"
-                     data-desc="Sitio web institucional para el club deportivo Génesis Calasanz. Incluye galería de fotos, información de grupos, sección de dirigentes y formulario de contacto."
+                     data-desc-es="Sitio web institucional para el club deportivo Génesis Calasanz. Incluye galería de fotos, información de grupos, sección de dirigentes y formulario de contacto."
+                     data-desc-en="Institutional website for the Génesis Calasanz sports club. Photo gallery, group information, staff section and contact form."
                      data-tech="HTML, CSS, JavaScript"
                      data-status="LIVE"
                      data-img="img/screenshot-genesis.jpg"
@@ -212,11 +353,14 @@
                     <span class="project-status-badge">LIVE</span>
                     <div class="project-image">
                         <img src="img/screenshot-genesis.jpg" alt="Génesis Calasanz" loading="lazy" />
-                        <div class="project-overlay"><span>Ver detalles</span></div>
+                        <div class="project-overlay"><span data-es="Ver detalles" data-en="View details">Ver detalles</span></div>
                     </div>
                     <div class="project-content">
                         <h3>Génesis Calasanz</h3>
-                        <p>Sitio institucional para club deportivo. Galería, grupos, dirigentes y contacto.</p>
+                        <p data-es="Sitio institucional para club deportivo. Galería, grupos, dirigentes y contacto."
+                           data-en="Institutional site for a sports club. Gallery, groups, staff and contact.">
+                            Sitio institucional para club deportivo. Galería, grupos, dirigentes y contacto.
+                        </p>
                         <div class="tech-tags">
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
@@ -227,7 +371,8 @@
 
                 <div class="project-card"
                      data-title="FarToFar"
-                     data-desc="Sitio web personal — uno de mis primeros proyectos, construido con HTML, CSS, JavaScript y PHP. Marca el inicio de mi camino en el desarrollo web."
+                     data-desc-es="Sitio web personal — uno de mis primeros proyectos, construido con HTML, CSS, JavaScript y PHP. Marca el inicio de mi camino en el desarrollo web."
+                     data-desc-en="Personal website — one of my first projects, built with HTML, CSS, JavaScript and PHP. It marks the beginning of my path in web development."
                      data-tech="HTML, CSS, JavaScript, PHP"
                      data-status="LIVE"
                      data-img="img/screenshot-fartofar.jpg"
@@ -235,17 +380,30 @@
                     <span class="project-status-badge">LIVE</span>
                     <div class="project-image">
                         <img src="img/screenshot-fartofar.jpg" alt="FarToFar" loading="lazy" />
-                        <div class="project-overlay"><span>Ver detalles</span></div>
+                        <div class="project-overlay"><span data-es="Ver detalles" data-en="View details">Ver detalles</span></div>
                     </div>
                     <div class="project-content">
                         <h3>FarToFar</h3>
-                        <p>Sitio web personal. Uno de mis primeros proyectos — donde empezó todo.</p>
+                        <p data-es="Sitio web personal. Uno de mis primeros proyectos — donde empezó todo."
+                           data-en="Personal website. One of my first projects — where it all started.">
+                            Sitio web personal. Uno de mis primeros proyectos — donde empezó todo.
+                        </p>
                         <div class="tech-tags">
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
                             <span class="tech-tag">JavaScript</span>
                             <span class="tech-tag">PHP</span>
                         </div>
+                    </div>
+                </div>
+
+                <div class="project-card view-more"
+                     data-link="https://github.com/Darw1ng">
+                    <div class="view-more-content">
+                        <div class="view-more-plus">+</div>
+                        <h3 data-es="Más proyectos" data-en="More projects">Más proyectos</h3>
+                        <p data-es="Visita mi GitHub para ver el resto del trabajo"
+                           data-en="Visit my GitHub to see the rest of the work">Visita mi GitHub para ver el resto del trabajo</p>
                     </div>
                 </div>
 
@@ -262,8 +420,10 @@
 
     <!-- ─── STACK ─── -->
     <section id="stack" class="stack-section">
-        <h2 class="section-title">Stack</h2>
-        <p class="section-subtitle">Tecnologías con las que trabajo día a día.</p>
+        <h2 class="section-title" data-es="Stack" data-en="Stack">Stack</h2>
+        <p class="section-subtitle"
+           data-es="Tecnologías con las que trabajo día a día."
+           data-en="Technologies I work with every day.">Tecnologías con las que trabajo día a día.</p>
 
         <div class="stack-grid">
             <div class="stack-category">
@@ -271,7 +431,7 @@
                 <div class="stack-items">
                     <div class="stack-item">
                         <div class="stack-label">
-                            <span class="stack-name">JavaScript</span>
+                            <span class="stack-name">TypeScript</span>
                             <span class="stack-pct">90%</span>
                         </div>
                         <div class="stack-bar"><div class="stack-fill" data-width="90"></div></div>
@@ -279,6 +439,13 @@
                     <div class="stack-item">
                         <div class="stack-label">
                             <span class="stack-name">React</span>
+                            <span class="stack-pct">90%</span>
+                        </div>
+                        <div class="stack-bar"><div class="stack-fill" data-width="90"></div></div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-label">
+                            <span class="stack-name">React Native / Expo</span>
                             <span class="stack-pct">80%</span>
                         </div>
                         <div class="stack-bar"><div class="stack-fill" data-width="80"></div></div>
@@ -290,25 +457,25 @@
                         </div>
                         <div class="stack-bar"><div class="stack-fill" data-width="85"></div></div>
                     </div>
-                    <div class="stack-item">
-                        <div class="stack-label">
-                            <span class="stack-name">Vue.js</span>
-                            <span class="stack-pct">65%</span>
-                        </div>
-                        <div class="stack-bar"><div class="stack-fill" data-width="65"></div></div>
-                    </div>
                 </div>
             </div>
 
             <div class="stack-category">
-                <div class="stack-cat-title">Backend</div>
+                <div class="stack-cat-title" data-es="Backend y Datos" data-en="Backend &amp; Data">Backend y Datos</div>
                 <div class="stack-items">
                     <div class="stack-item">
                         <div class="stack-label">
-                            <span class="stack-name">Node.js</span>
-                            <span class="stack-pct">78%</span>
+                            <span class="stack-name">Node.js / Express</span>
+                            <span class="stack-pct">85%</span>
                         </div>
-                        <div class="stack-bar"><div class="stack-fill" data-width="78"></div></div>
+                        <div class="stack-bar"><div class="stack-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-label">
+                            <span class="stack-name">PostgreSQL</span>
+                            <span class="stack-pct">85%</span>
+                        </div>
+                        <div class="stack-bar"><div class="stack-fill" data-width="85"></div></div>
                     </div>
                     <div class="stack-item">
                         <div class="stack-label">
@@ -319,32 +486,29 @@
                     </div>
                     <div class="stack-item">
                         <div class="stack-label">
-                            <span class="stack-name">PostgreSQL</span>
-                            <span class="stack-pct">72%</span>
+                            <span class="stack-name">Apex / Salesforce</span>
+                            <span class="stack-pct">70%</span>
                         </div>
-                        <div class="stack-bar"><div class="stack-fill" data-width="72"></div></div>
-                    </div>
-                    <div class="stack-item">
-                        <div class="stack-label">
-                            <span class="stack-name">Firebase</span>
-                            <span class="stack-pct">68%</span>
-                        </div>
-                        <div class="stack-bar"><div class="stack-fill" data-width="68"></div></div>
+                        <div class="stack-bar"><div class="stack-fill" data-width="70"></div></div>
                     </div>
                 </div>
             </div>
 
             <div class="stack-category stack-interests">
-                <div class="stack-cat-title">Intereses</div>
+                <div class="stack-cat-title" data-es="Además trabajo con" data-en="I also work with">Además trabajo con</div>
                 <div class="interest-tags">
-                    <span class="interest-tag">UX/UI</span>
-                    <span class="interest-tag">Machine Learning</span>
-                    <span class="interest-tag">Open Source</span>
-                    <span class="interest-tag">DevOps</span>
+                    <span class="interest-tag">Stripe</span>
+                    <span class="interest-tag">Sequelize</span>
+                    <span class="interest-tag">Supabase</span>
+                    <span class="interest-tag">Railway</span>
+                    <span class="interest-tag">Vercel</span>
+                    <span class="interest-tag">Backblaze B2</span>
+                    <span class="interest-tag">Turborepo</span>
+                    <span class="interest-tag">Git / GitHub</span>
+                    <span class="interest-tag">CI/CD</span>
                     <span class="interest-tag">APIs REST</span>
-                    <span class="interest-tag">Mobile Dev</span>
-                    <span class="interest-tag">Accesibilidad</span>
-                    <span class="interest-tag">Performance</span>
+                    <span class="interest-tag">LLMs</span>
+                    <span class="interest-tag">Unity</span>
                 </div>
             </div>
         </div>
@@ -352,44 +516,56 @@
 
     <!-- ─── EXPERIENCIA / HISTORIA ─── -->
     <section id="experiencia" class="section">
-        <h2 class="section-title">Experiencia</h2>
-        <p class="section-subtitle">Mi recorrido hasta aquí.</p>
+        <h2 class="section-title" data-es="Experiencia" data-en="Experience">Experiencia</h2>
+        <p class="section-subtitle" data-es="Mi recorrido hasta aquí." data-en="My path so far.">Mi recorrido hasta aquí.</p>
 
         <div class="timeline">
 
             <div class="timeline-item highlight">
                 <div class="timeline-dot now"></div>
-                <div class="timeline-year">2025 — HOY</div>
+                <div class="timeline-year" data-es="2026 — HOY" data-en="2026 — NOW">2026 — HOY</div>
                 <div class="timeline-content">
-                    <h3>Desarrollo Freelance</h3>
-                    <p>
-                        Proyectos web independientes para clientes locales y remotos.
-                        Diseño, desarrollo e implementación de principio a fin.
+                    <h3 data-es="Jefe de Desarrollo — Petworld" data-en="Head of Development — Petworld">Jefe de Desarrollo — Petworld</h3>
+                    <p data-es="Responsable técnico del producto completo. Reestructuré la plataforma de punta a punta: arquitectura de backend, esquema de base de datos, migración de almacenamiento, sistema de suscripciones con Stripe y refactor del frontend a TypeScript estricto. Defino las prioridades técnicas y coordino el trabajo del equipo."
+                       data-en="Technical owner of the entire product. I restructured the platform end to end: backend architecture, database schema, storage migration, Stripe subscription system and a frontend refactor to strict TypeScript. I set technical priorities and coordinate the team's work.">
+                        Responsable técnico del producto completo. Reestructuré la plataforma de punta a punta: arquitectura de backend, esquema de base de datos, migración de almacenamiento, sistema de suscripciones con Stripe y refactor del frontend a TypeScript estricto. Defino las prioridades técnicas y coordino el trabajo del equipo.
                     </p>
-                    <span class="timeline-badge">Activo</span>
+                    <span class="timeline-badge" data-es="Activo" data-en="Active">Activo</span>
                 </div>
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-dot accent"></div>
-                <div class="timeline-year">2023</div>
+                <div class="timeline-year">2025 — 2026</div>
                 <div class="timeline-content">
-                    <h3>Primer proyecto de producción</h3>
-                    <p>
-                        Lancé mi primera aplicación con usuarios reales. Aprendí sobre ciclos de vida
-                        de producto, feedback real y la diferencia entre código que funciona y código que escala.
+                    <h3 data-es="Full Stack multi-producto" data-en="Multi-product full stack">Full Stack multi-producto</h3>
+                    <p data-es="Trabajo simultáneo en varios productos: el frontend de Pulso (SaaS médico), la plataforma e-learning de WakOs en Salesforce y just2know, un producto propio que llevé de idea a producción con suscripciones. Segundo lugar en Talent Land México 2026 y participación en NASA Space Apps 2024 y 2025."
+                       data-en="Working across several products at once: the Pulso frontend (medical SaaS), the WakOs e-learning platform on Salesforce, and just2know, my own product taken from idea to production with subscriptions. 2nd place at Talent Land México 2026 and participant in NASA Space Apps 2024 and 2025.">
+                        Trabajo simultáneo en varios productos: el frontend de Pulso (SaaS médico), la plataforma e-learning de WakOs en Salesforce y just2know, un producto propio que llevé de idea a producción con suscripciones. Segundo lugar en Talent Land México 2026 y participación en NASA Space Apps 2024 y 2025.
                     </p>
                 </div>
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <div class="timeline-year">2021</div>
+                <div class="timeline-year">2023 — 2024</div>
                 <div class="timeline-content">
-                    <h3>Inicio en programación</h3>
-                    <p>
-                        Primeras líneas de código. HTML, CSS y JavaScript. La curiosidad por entender
-                        cómo funcionan las cosas se convirtió en mi motor principal.
+                    <h3 data-es="Primeros productos en producción" data-en="First products in production">Primeros productos en producción</h3>
+                    <p data-es="Publiqué mis primeras aplicaciones móviles con usuarios reales y entregué sistemas de punto de venta e inventario a negocios locales. Aprendí la diferencia entre código que funciona y código que se mantiene."
+                       data-en="I shipped my first mobile apps with real users and delivered point-of-sale and inventory systems to local businesses. I learned the difference between code that works and code that lasts.">
+                        Publiqué mis primeras aplicaciones móviles con usuarios reales y entregué sistemas de punto de venta e inventario a negocios locales. Aprendí la diferencia entre código que funciona y código que se mantiene.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2021 — 2022</div>
+                <div class="timeline-content">
+                    <h3 data-es="Inicio en programación" data-en="Getting started in programming">Inicio en programación</h3>
+                    <p data-es="Primeras líneas de código: HTML, CSS y JavaScript. La curiosidad por entender cómo funcionan las cosas se convirtió en mi motor principal, y al año siguiente entré a Ingeniería en Sistemas Computacionales."
+                       data-en="First lines of code: HTML, CSS and JavaScript. Curiosity about how things work became my main driver, and the following year I started a Computer Systems Engineering degree.">
+                        Primeras líneas de código: HTML, CSS y JavaScript. La curiosidad por entender cómo funcionan las cosas se convirtió en mi motor principal, y al año siguiente entré a Ingeniería en Sistemas Computacionales.
                     </p>
                 </div>
             </div>
@@ -397,28 +573,28 @@
         </div>
 
         <div class="historia-content" style="margin-top: 4rem;">
-            <p>
-                Soy Erick, desarrollador de software con enfoque en el producto completo —
-                desde la interfaz hasta la base de datos. Me gusta construir cosas que la gente
-                realmente use y que resuelvan problemas concretos.
+            <p data-es="Soy Erick, ingeniero en sistemas y desarrollador full stack. Trabajo sobre el producto completo —de la interfaz a la base de datos y la infraestructura— y me interesa especialmente la parte que no se ve: el esquema de datos, las migraciones, los límites de plan, los webhooks de pago y todo lo que hace que un producto aguante usuarios reales."
+               data-en="I'm Erick, a systems engineer and full stack developer. I work across the entire product —from the interface to the database and infrastructure— and I'm especially drawn to the part nobody sees: the data schema, the migrations, the plan limits, the payment webhooks and everything that makes a product hold up under real users.">
+                Soy Erick, ingeniero en sistemas y desarrollador full stack. Trabajo sobre el producto completo —de la interfaz a la base de datos y la infraestructura— y me interesa especialmente la parte que no se ve: el esquema de datos, las migraciones, los límites de plan, los webhooks de pago y todo lo que hace que un producto aguante usuarios reales.
             </p>
-            <p>
-                Trabajo mejor en entornos donde hay autonomía, donde se puede iterar rápido
-                y donde el código importa tanto como el resultado final.
+            <p data-es="Trabajo mejor donde hay autonomía, donde se itera rápido y donde el código importa tanto como el resultado final."
+               data-en="I work best where there's autonomy, fast iteration, and where the code matters as much as the outcome.">
+                Trabajo mejor donde hay autonomía, donde se itera rápido y donde el código importa tanto como el resultado final.
             </p>
         </div>
         <div class="enfoque-cta">
-            <a href="#contacto" class="cta-button">Hablemos</a>
+            <a href="#contacto" class="cta-button" data-es="Hablemos" data-en="Let's talk">Hablemos</a>
         </div>
     </section>
 
     <!-- ─── CONTACTO ─── -->
     <section id="contacto" class="contact">
         <div style="max-width:700px; margin:0 auto; text-align:center;">
-            <h2 class="section-title">Contacto</h2>
-            <p class="contact-subtitle">
-                ¿Tienes un proyecto en mente o quieres colaborar?<br />
-                Escríbeme y lo platicamos.
+            <h2 class="section-title" data-es="Contacto" data-en="Contact">Contacto</h2>
+            <p class="contact-subtitle"
+               data-es="¿Tienes un proyecto en mente o quieres colaborar? Escríbeme y lo platicamos."
+               data-en="Got a project in mind or want to collaborate? Drop me a line.">
+                ¿Tienes un proyecto en mente o quieres colaborar? Escríbeme y lo platicamos.
             </p>
             <div class="contact-links">
                 <a href="mailto:jimdom340@gmail.com" class="contact-link">
@@ -441,7 +617,7 @@
 
     <!-- ─── FOOTER ─── -->
     <footer>
-        <span>Wawin<span class="footer-accent">.</span> &copy; 2025</span>
+        <span>Wawin<span class="footer-accent">.</span> &copy; 2026</span>
     </footer>
 
 </div><!-- /content-wrapper -->
@@ -461,7 +637,8 @@
             <p id="modalDesc"></p>
             <div class="modal-tech-wrap" id="modalTech"></div>
             <div class="modal-cta">
-                <a id="modalLink" href="#" target="_blank" rel="noopener" class="cta-button">
+                <a id="modalLink" href="#" target="_blank" rel="noopener" class="cta-button"
+                   data-es="Ver proyecto" data-en="View project">
                     Ver proyecto
                 </a>
             </div>

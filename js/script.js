@@ -1,3 +1,51 @@
+// ─────────────────── i18n (ES / EN) ───────────────────
+const I18N_KEY = 'wawin-lang';
+
+// Textos que no viven en el DOM (los pinta el modal en runtime)
+const UI_TEXT = {
+    es: { menu: 'Abrir menú', prev: 'Anterior', next: 'Siguiente', close: 'Cerrar' },
+    en: { menu: 'Open menu', prev: 'Previous', next: 'Next', close: 'Close' }
+};
+
+function getLang() {
+    const saved = localStorage.getItem(I18N_KEY);
+    if (saved === 'es' || saved === 'en') return saved;
+    // primera visita: seguimos el idioma del navegador
+    return (navigator.language || 'es').toLowerCase().startsWith('en') ? 'en' : 'es';
+}
+
+let currentLang = getLang();
+
+function applyLang(lang) {
+    currentLang = lang;
+    localStorage.setItem(I18N_KEY, lang);
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll('[data-es][data-en]').forEach(el => {
+        const text = el.dataset[lang];
+        if (text) el.textContent = text;
+    });
+
+    // estado visual del switch
+    document.querySelectorAll('.lang-opt').forEach(opt => {
+        opt.classList.toggle('active', opt.dataset.lang === lang);
+    });
+
+    // aria-labels
+    const t = UI_TEXT[lang];
+    const set = (id, label) => {
+        const el = document.getElementById(id);
+        if (el) el.setAttribute('aria-label', label);
+    };
+    set('navMenuBtn', t.menu);
+    set('prevBtn', t.prev);
+    set('nextBtn', t.next);
+    set('modalClose', t.close);
+
+    // si el modal está abierto, repintarlo en el nuevo idioma
+    if (openCard && modalOverlay.classList.contains('open')) openModal(openCard);
+}
+
 // ─────────────────── SMOOTH SCROLL ───────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -35,9 +83,17 @@ const modalDesc    = document.getElementById('modalDesc');
 const modalTech    = document.getElementById('modalTech');
 const modalLink    = document.getElementById('modalLink');
 
+let openCard = null;
+
 function openModal(card) {
+    openCard = card;
+
     const title  = card.dataset.title  || '';
-    const desc   = card.dataset.desc   || '';
+    // descripción según idioma, con fallback al otro y al genérico
+    const desc   = card.dataset['desc' + (currentLang === 'en' ? 'En' : 'Es')]
+                || card.dataset.descEs
+                || card.dataset.desc
+                || '';
     const tech   = card.dataset.tech   || '';
     const status = card.dataset.status || '';
     const link   = card.dataset.link   || '#';
@@ -73,6 +129,7 @@ function openModal(card) {
 function closeModal() {
     modalOverlay.classList.remove('open');
     document.body.style.overflow = '';
+    openCard = null;
 }
 
 modalClose.addEventListener('click', closeModal);
@@ -100,6 +157,16 @@ document.querySelectorAll('.project-card').forEach(card => {
         openModal(card);
     });
 });
+
+// ─────────────────── LANG TOGGLE ───────────────────
+const langToggle = document.getElementById('langToggle');
+
+langToggle.addEventListener('click', () => {
+    applyLang(currentLang === 'es' ? 'en' : 'es');
+});
+
+// idioma inicial (guardado o el del navegador)
+applyLang(currentLang);
 
 // ─────────────────── CAROUSEL ───────────────────
 const carousel   = document.getElementById('carousel');

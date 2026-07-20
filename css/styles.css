@@ -114,6 +114,45 @@ body {
     width: 100%;
 }
 
+/* ─── Switch de idioma ES / EN ─── */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+    background: none;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-secondary);
+    padding: 0.35rem 0.7rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    transition: border-color 0.2s;
+}
+
+.lang-toggle:hover {
+    border-color: var(--color-accent);
+}
+
+.lang-sep {
+    opacity: 0.35;
+}
+
+.lang-opt {
+    transition: color 0.2s;
+}
+
+.lang-opt.active {
+    color: var(--color-accent);
+}
+
 .nav-menu-btn {
     display: none;
     background: none;
@@ -403,6 +442,16 @@ body {
 .project-card:hover .project-image img {
     transform: scale(1.08);
     filter: grayscale(0%) brightness(0.9);
+}
+
+/* Placeholders SVG: ya vienen en la paleta del sitio, no los desaturamos */
+.project-image img.ph {
+    filter: brightness(0.85);
+}
+
+.project-card:hover .project-image img.ph {
+    filter: brightness(1);
+    transform: scale(1.04);
 }
 
 .project-overlay {
