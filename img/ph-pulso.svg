@@ -1,29 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Pulso">
   <defs>
-    <linearGradient id="plBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1412"/>
-      <stop offset="100%" stop-color="#05201d"/>
+    <linearGradient id="puBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1416"/>
+      <stop offset="100%" stop-color="#052024"/>
     </linearGradient>
-    <radialGradient id="plGlow" cx="0.5" cy="0.42" r="0.55">
-      <stop offset="0%" stop-color="#4ecdc4" stop-opacity="0.26"/>
-      <stop offset="100%" stop-color="#4ecdc4" stop-opacity="0"/>
+    <radialGradient id="puGlow" cx="0.5" cy="0.38" r="0.55">
+      <stop offset="0%" stop-color="#0E9498" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#0E9498" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="plGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <pattern id="puGrid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M40 0H0V40" fill="none" stroke="#4ecdc4" stroke-opacity="0.07" stroke-width="1"/>
     </pattern>
   </defs>
 
-  <rect width="800" height="500" fill="url(#plBg)"/>
-  <rect width="800" height="500" fill="url(#plGrid)"/>
-  <rect width="800" height="500" fill="url(#plGlow)"/>
+  <rect width="800" height="500" fill="url(#puBg)"/>
+  <rect width="800" height="500" fill="url(#puGrid)"/>
+  <rect width="800" height="500" fill="url(#puGlow)"/>
 
-  <!-- ECG line -->
-  <path d="M120 200 H265 l22 -58 l26 116 l24 -140 l26 152 l22 -70 H680"
-        fill="none" stroke="#4ecdc4" stroke-width="6"
-        stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="680" cy="200" r="9" fill="#4ecdc4"/>
+  <!-- marca oficial de Pulso: la misma del favicon del producto -->
+  <g transform="translate(246.0 138.0) scale(1.6250)">
+    <rect width="64" height="64" rx="14" fill="#0E9498"/>
+    <path d="M10 32h12l5-14 10 28 6-18 4 8h7" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="376" y="211" text-anchor="start" font-family="Segoe UI, system-ui, sans-serif" font-size="60" font-weight="700" fill="#eeeeee" letter-spacing="1">Pulso</text>
 
-  <text x="400" y="330" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="52" font-weight="700" fill="#eeeeee" letter-spacing="1">Pulso</text>
-  <text x="400" y="372" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="21" font-weight="600" fill="#4ecdc4" letter-spacing="3">SAAS · FRONTEND LEAD</text>
-  <text x="400" y="408" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="17" fill="#888888">React · TypeScript · Django · PostgreSQL</text>
+  <text x="400" y="292" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="21" font-weight="600" fill="#4ecdc4" letter-spacing="3">SAAS &#183; LEAD FRONTEND</text>
+  <text x="400" y="330" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="17" fill="#888888">React &#183; TypeScript &#183; Django &#183; PostgreSQL</text>
+  <text x="400" y="376" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="16" fill="#4ecdc4" opacity="0.7" letter-spacing="1">pulso-sitirt.pages.dev</text>
 </svg>

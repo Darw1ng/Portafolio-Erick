@@ -1,6 +1,6 @@
-# Portafolio — Wawin
+# Portafolio — Erick Jiménez
 
-Portafolio personal de **Erick Jiménez Domínguez** (Wawin), desarrollador full stack y jefe de desarrollo en Petworld.
+Portafolio personal de **Erick Jiménez Domínguez**, CTO en Petworld y desarrollador del frontend en Pulso.
 
 🔗 **[portafolio-wawin.vercel.app](https://portafolio-wawin.vercel.app/)**
 
@@ -76,7 +76,7 @@ React · TypeScript · React Native · Node.js · Express · PostgreSQL · Seque
 
 ## English
 
-Personal portfolio of **Erick Jiménez Domínguez** (Wawin), full stack developer and head of development at Petworld.
+Personal portfolio of **Erick Jiménez Domínguez**, CTO at Petworld and frontend developer at Pulso.
 
 🔗 **[portafolio-wawin.vercel.app](https://portafolio-wawin.vercel.app/)**
 
