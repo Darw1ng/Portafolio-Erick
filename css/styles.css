@@ -846,6 +846,48 @@ body {
     transition: border-color 0.3s;
 }
 
+/* ─────────────────── CREDENCIALES ─────────────────── */
+.credenciales {
+    max-width: 700px;
+    margin: 4rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.cred-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    font-family: monospace;
+    margin-bottom: 1.2rem;
+}
+
+.cred-item {
+    margin-bottom: 1.1rem;
+}
+
+.cred-item:last-child {
+    margin-bottom: 0;
+}
+
+.cred-name {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    line-height: 1.4;
+    margin-bottom: 0.15rem;
+}
+
+.cred-meta {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
 /* ─────────────────── ENFOQUE ─────────────────── */
 .historia-content {
     max-width: 720px;
@@ -1081,6 +1123,13 @@ footer {
     .featured-projects {
         grid-template-columns: 1fr;
     }
+
+    /* Tres columnas de credenciales no caben: los nombres largos
+       ("Ing. en Sistemas Computacionales") parten en 3 renglones. */
+    .credenciales {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1118,6 +1167,12 @@ footer {
 
     .timeline {
         padding-left: 1.8rem;
+    }
+
+    .credenciales {
+        grid-template-columns: 1fr;
+        gap: 2.2rem;
+        margin-top: 3rem;
     }
 
     .contact-link {
